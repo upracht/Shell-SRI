@@ -64,7 +64,7 @@ class Cooler():
 		if sys.platform=='linux':
 			pre = '/dev/ttyUSB'
 		elif sys.platform=='win32':
-			pre = 'USB'
+			pre = 'COM'
 
 		if port != None:
 
