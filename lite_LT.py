@@ -121,7 +121,7 @@ while run:
 	cmd = input('>>> ')
 
 	if cmd == 'go':
-		c.write(6,3600)
+		c.write(6,3900)
 		c.write(5,7)
 
 	elif cmd == 'exit':
@@ -175,7 +175,7 @@ while run:
 
 	elif 'speed' in cmd:
 		val = int(cmd.split(' ')[1])
-		if 0 <= val <= 3600:
+		if 0 <= val <= 3900:
 			c.write(6,val)
 			print(f"speed set value changed to {c.read(6)[0]} RPM")
 		else:
@@ -259,7 +259,7 @@ while run:
 		else:
 			print('ERROR: diode set value must be within 0 - 1.4V')
 
-		c.write(6,3600) # allow the full speed range
+		c.write(6,3900) # allow the full speed range
 
 		if c.read(5)[0]%2 == 0: # off
 			c.write(5,2)
