@@ -89,6 +89,7 @@ class Cooler():
 					if i > 100:
 						run = False
 						print('no device found')
+						time.sleep(1)
 
 	def read(self,reg):
 		res = 0
