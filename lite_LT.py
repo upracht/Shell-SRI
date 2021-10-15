@@ -284,13 +284,13 @@ while run:
 	elif 'I ' in cmd:
 		val = int(cmd.split(' ')[1])
 		if 0 < val < 32767:
-			c.write(14,val)
+			c.write(15,val)
 		else:
 			print(f'ERROR: I must be within 0 ... 32767. Default is I = 4500.')
 	elif 'D ' in cmd:
 		val = int(cmd.split(' ')[1])
 		if 0 < val < 32767:
-			c.write(14,val)
+			c.write(16,val)
 		else:
 			print(f'ERROR: D must be within 0 ... 32767. Default is D = 20.')
 
